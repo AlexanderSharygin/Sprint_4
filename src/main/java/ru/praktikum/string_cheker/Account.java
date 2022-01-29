@@ -10,7 +10,7 @@ public class Account {
 
     public boolean checkNameToEmboss() {
 
-        return ((name.length() > 3 && name.length() < 19 && name.matches("(^[A-zА-яЁё])([A-zА-яЁё]+ {1})([A-zА-яЁё]*$)")));
+        return (name.length()<20 && name.matches("(^[A-zА-яЁё]+)( )([A-zА-яЁё]+$)"));
     }
 
 }
