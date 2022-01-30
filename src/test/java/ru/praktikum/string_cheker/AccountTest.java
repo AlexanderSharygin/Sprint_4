@@ -8,7 +8,7 @@ public class AccountTest {
     @Test
     @DisplayName("Check the name started from letter ended with letter and contains only one space")
     public void checkNameStartedFromLetterEndedWithLetterAndContainsOneSpaceTrue() {
-        Account account = new Account("Test Test");
+        Account account = new Account("Test  Test");
         boolean actual = account.checkNameToEmboss();
         Assert.assertTrue("The name started from letter ended with letter and contains only one space should be valid", actual);
     }
